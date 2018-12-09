@@ -171,6 +171,7 @@ namespace FastRoute
             InitializeComponent();
             int pdwSize = 1;
 
+
             UInt32[] pIPForwardTable = new uint[1];
 
             GetIpForwardTable(pIPForwardTable, out pdwSize, true);
@@ -540,6 +541,11 @@ namespace FastRoute
                 }
                 catch { }
             }
+        }
+
+        private void GithubLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/KeyMove/FastRoute");
         }
     }
 }

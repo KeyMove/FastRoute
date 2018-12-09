@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.RoutePath = new System.Windows.Forms.ComboBox();
             this.SavePathFile = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.GithubLabel = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // AddRoute
@@ -114,22 +114,23 @@
             this.SavePathFile.Text = "记录路径";
             this.SavePathFile.UseVisualStyleBackColor = true;
             // 
-            // linkLabel1
+            // GithubLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(13, 123);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(41, 12);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Github";
+            this.GithubLabel.AutoSize = true;
+            this.GithubLabel.Location = new System.Drawing.Point(13, 123);
+            this.GithubLabel.Name = "GithubLabel";
+            this.GithubLabel.Size = new System.Drawing.Size(41, 12);
+            this.GithubLabel.TabIndex = 6;
+            this.GithubLabel.TabStop = true;
+            this.GithubLabel.Text = "Github";
+            this.GithubLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLabel_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(226, 125);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.GithubLabel);
             this.Controls.Add(this.SavePathFile);
             this.Controls.Add(this.RoutePath);
             this.Controls.Add(this.pross);
@@ -157,7 +158,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox RoutePath;
         private System.Windows.Forms.CheckBox SavePathFile;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel GithubLabel;
     }
 }
 
