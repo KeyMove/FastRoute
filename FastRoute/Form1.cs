@@ -536,7 +536,7 @@ namespace FastRoute
                     int index = int.Parse(istr);
                     int count = int.Parse(cstr);
                     for (int i = 0; i < paths.Length-1; i++)
-                        RoutePath.Items.Insert(0, paths[paths.Length - i - 2]);
+                        RoutePath.Items.Insert(0, paths[paths.Length - i - 2].Replace("\r",""));
                     RoutePath.SelectedIndex = index;
                 }
                 catch { }
